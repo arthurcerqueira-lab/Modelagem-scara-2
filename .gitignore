@@ -1,0 +1,8 @@
+# Ignorar pastas geradas pelo colcon
+build/
+install/
+log/
+
+# Ignorar arquivos temporários
+*.env
+*.log

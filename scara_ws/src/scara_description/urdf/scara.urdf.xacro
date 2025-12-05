@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="scara">
+<link name="world"/>
+<link name="base_link">
+<visual>
+<origin rpy="0 0 0" xyz="-0.5 -0.5 0"/>
+<geometry>
+<mesh filename="package://scara_description/meshes/bs.stl" scale="0.01 0.01
+0.01"/>
+</geometry>
+</visual>
+</link>
+<!-- Joints -->
+<joint name="virtual_joint" type="fixed">
+<parent link="world"/>
+<child link="base_link"/>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+</joint>
+</robot>
